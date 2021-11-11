@@ -25,7 +25,7 @@ theme:
 
     # Light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: slate
+      scheme: default
       primary: indigo
       accent: indigo
       toggle:
@@ -34,7 +34,7 @@ theme:
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: default 
+      scheme: slate 
       primary: indigo
       accent: indigo
       toggle:
