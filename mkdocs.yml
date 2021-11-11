@@ -1,28 +1,29 @@
-site_name: 3d24rd0
+# Project information
+site_name: Docs
+site_url: https://yaminokishi.com/
+site_author: 3d24rd0
+site_description: >-
+  A personal docs
+
+copyright: 'Copyright &copy; 2021 3d24rd0'
+
 theme:
   name: material
   # custom_dir: material
-
   # 404 page
   static_templates:
     - 404.html
-
   # Necessary for search to work properly
   include_search_page: false
   search_index_only: true
-
   language: es
   font:
     text: Roboto
     code: Roboto Mono
-
   favicon: assets/favicon.png
-
   icon:
     logo: logo
-  
   palette:
-
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -40,3 +41,9 @@ theme:
       toggle:
         icon: material/lightbulb
         name: Switch to light mode
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
