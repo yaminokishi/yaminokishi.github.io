@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+site_name: 3d24rd0
+theme:
+  name: material
+  # custom_dir: material
 
-You can use the [editor on GitHub](https://github.com/yaminokishi/yaminokishi.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+  # 404 page
+  static_templates:
+    - 404.html
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
 
-### Markdown
+  language: es
+  font:
+    text: Roboto
+    code: Roboto Mono
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  favicon: assets/favicon.png
 
-```markdown
-Syntax highlighted code block
+  icon:
+    logo: logo
+  
+  palette:
 
-# Header 1
-## Header 2
-### Header 3
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/yaminokishi/yaminokishi.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default 
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
