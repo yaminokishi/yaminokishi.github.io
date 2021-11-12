@@ -47,3 +47,6 @@ plugins:
   - search
   - minify:
       minify_html: true
+  - redirects:
+      redirect_maps:
+        'index.md': 2015-08-19-hello-word-3.md
